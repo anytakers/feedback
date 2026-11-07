@@ -1,0 +1,57 @@
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! Posts here are public: don't include emails, passwords or other personal data.
+        Found a security problem? Don't post it here; email us instead (see the pinned welcome post).
+  - type: dropdown
+    id: area
+    attributes:
+      label: Which part of Any Takers?
+      options:
+        - Ideas & posting
+        - Matching
+        - Requests & teams
+        - Kickoff & GitHub
+        - Team pages & rankings
+        - Badges & grades
+        - Profile
+        - Notifications
+        - Ads
+        - Other / not sure
+    validations:
+      required: true
+  - type: input
+    id: page
+    attributes:
+      label: Where did it happen?
+      description: The page address, or the screen name.
+      placeholder: https://…/ideas/my-idea
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: What did you do?
+      placeholder: "1. Opened…  2. Clicked…"
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happened instead?
+      description: Error messages or screenshots help a lot.
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Browser and device
+      placeholder: Firefox 140 on Android
